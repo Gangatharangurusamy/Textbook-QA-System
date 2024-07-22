@@ -97,7 +97,7 @@ def retrieve_answer(question, book):
         return f"An error occurred during retrieval: {e}"
 
 # Example usage (comment out or remove in production)
-if _name_ == "_main_":
+if __name__ == "__main__":
     question = "What is the main topic of Deep Learning?"
     book = "Deep Learning"
     answer = retrieve_answer(question, book)
