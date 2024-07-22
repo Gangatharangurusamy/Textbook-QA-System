@@ -59,9 +59,9 @@ def retrieve_answer(question, book):
         str: The answer to the question or an error message.
     """
     dataset_dir = {
-        "Deep Learning": r"D:\Projects\LLamaIndex\RAG\dataset_deep_learning",
-        "Introduction to Algorithms": r"D:\Projects\LLamaIndex\RAG\dataset_introduction_to_algorithms",
-        "AI: A Modern Approach": r"D:\Projects\LLamaIndex\RAG\dataset_ai_modern_approach"
+        "Deep Learning": "dataset_deep_learning",
+        "Introduction to Algorithms": "dataset_introduction_to_algorithms",
+        "AI: A Modern Approach": "dataset_ai_modern_approach"
     }.get(book, None)
     
     if not dataset_dir:
@@ -97,7 +97,7 @@ def retrieve_answer(question, book):
         return f"An error occurred during retrieval: {e}"
 
 # Example usage (comment out or remove in production)
-if __name__ == "__main__":
+if _name_ == "_main_":
     question = "What is the main topic of Deep Learning?"
     book = "Deep Learning"
     answer = retrieve_answer(question, book)
