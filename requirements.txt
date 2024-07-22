@@ -1,0 +1,15 @@
+streamlit
+langchain
+langchain_community
+transformers
+fitz
+anytree
+datasets
+whoosh
+langchain
+langchain-groq
+langchain-google-genai
+python-dotenv
+langchain-core
+langchain-community
+faiss-cpu  # or faiss-gpu if you need GPU support
